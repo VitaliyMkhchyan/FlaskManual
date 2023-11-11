@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Profile
+{% endblock %}
+
+{% block body %}
+<p>
+  <img src="{{url_for('userava')}}" alt="" width="50px" height="50">
+  <form action="{{url_for('upload_file')}}" method="POST" enctype="multipart/form-data">
+    <input type="file" name="file">
+    <input type="submit" value="Submit">
+  </form>
+  <a href="{{url_for('logout')}}">Logout</a>
+  <p>Login: {{current_user.getName()}}</p>
+  <p>Email: {{current_user.getEmail()}}</p>
+</p>
+{% endblock %}

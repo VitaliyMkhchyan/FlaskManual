@@ -1,0 +1,13 @@
+* {
+    margin: 10px;
+}
+
+.success {
+   background: green;
+   color: while;
+}
+
+.error {
+    background: red;
+    color: while;
+}

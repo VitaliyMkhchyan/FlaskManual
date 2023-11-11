@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Добавление статьи
+{% endblock %}
+
+{% block body %}
+<form method="POST">
+    <input type="text" name="title" class="form-control"><br>
+    <textarea name="text" cols="30" rows="10" class="form-control"></textarea><br>
+    <input type="submit" value="Сохранить" class="btn btn-warning">
+</form>
+{% endblock %}

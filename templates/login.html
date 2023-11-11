@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Регистрация
+{% endblock %}
+
+{% block body %}
+{% for category, message in get_flashed_messages(True) %}
+<div class="{{category}}">{{message}}</div>
+{% endfor %}
+<form method="post">
+    <input type="text" class="form-control" placeholder="Email" name="email"><br><br>
+    <input type="password" class="form-control" placeholder="Password" name="password"><br><br>
+    <input type="checkbox" name="auth">Запомнить меня<br>
+    <input type="submit" value="Submit">
+</form>
+<a href="{{url_for('registration')}}">Зарегистрироваться</a>
+{% endblock %}

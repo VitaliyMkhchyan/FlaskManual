@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+{% block body %}
+{% for post in posts %}
+<div style="background: #a9b9d1; color: white; border-radius: 10px;">
+    <a href="{{ url_for('showPost', id=post.id) }}" style="text-decoration: none;"><h2>{{post.title }}</h2></a>
+</div>
+{% endfor %}
+{% endblock %}

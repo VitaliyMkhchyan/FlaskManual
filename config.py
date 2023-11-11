@@ -1,0 +1,4 @@
+DATABASE = "/users.db"
+SECRET_KEY = "sdr868g7sdr798h789fth87trd68er56g54rsvg7dr65hg"
+DEBUG = True
+MAX_CONTENT_LENGTH = 1024 * 1024
